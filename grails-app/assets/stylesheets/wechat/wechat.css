@@ -1,0 +1,1059 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Helvetica, "Helvetica Neue", Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, sans-serif;
+    color: #333;
+    background-color: #f4f4ef;
+    /*padding-bottom: 1rem;*/
+}
+
+html {
+    font-size: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 413px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 479px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, em, b {
+    font-weight: normal;
+    font-style: normal;
+}
+
+img {
+    vertical-align: middle;
+}
+
+input, select, textarea {
+    outline: none;
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.weui_cells_form .weui_cell_hd {
+    padding-right: 0;
+}
+
+/*热线样式*/
+.wjwoo-hotline {
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(51, 51, 51, 0.9);
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0 6rem;
+}
+
+.hotline {
+    color: #fff;
+}
+
+.hotlineIcon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 4px;
+}
+
+.hjwoo-hotline2 {
+    margin: 2rem 0 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.hjwoo-hotline2 a {
+    display: block;
+    background-color: rgba(51, 51, 51, 0.80);
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    height: 3.5rem;
+    width: 17rem;
+    border-radius: 2rem;
+}
+
+.hjwoo-hotline2 a.active {
+    background-color: rgba(51, 51, 51, 0.88);
+}
+
+.bgcWhite {
+    background-color: #fff;
+}
+
+.header {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    background-color: #F4F5F1;
+    color: #AAAAAA;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.weui_cell_hd .weui_label {
+    font-size: 1rem;
+    color: #999;
+    margin-right: 20px;
+}
+
+.weui_cell_select .weui_cell_hd .weui_label {
+    margin-right: 5px;
+}
+
+.wxRegister .weui_label, .wxLogin .weui_label, .wxCreate .weui_label {
+    width: 4rem;
+}
+
+.weui_cell input, .weui_cell select {
+    font-family: inherit;
+    font-size: 1.3rem;
+    color: #4A4A4A;
+}
+
+::-webkit-input-placeholder {
+    font-size: 1.2rem;
+    color: #ccc;
+    font-family: inherit;
+}
+
+::-moz-placeholder {
+    font-size: 1.2rem;
+    color: #ccc;
+    font-family: inherit;
+}
+
+:-ms-input-placeholder {
+    font-size: 1.2rem;
+    color: #ccc;
+    font-family: inherit;
+}
+
+:-moz-placeholder {
+    font-size: 1.2rem;
+    color: #ccc;
+    font-family: inherit;
+}
+
+.wxRegSuc {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.weui_cells {
+    margin-top: 0;
+}
+
+.weui_btn {
+    font-size: 1.3rem;
+}
+
+.vCode-btn {
+    background-color: #06c003 !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+    border: 1px solid #06c003;
+    font-family: inherit;
+}
+
+.vCodeActive {
+    background-color: #62C16A !important;
+    border: 1px solid #62C16A;
+    font-size: 1.5rem;
+}
+
+.hjwoo-deal {
+    padding: 0 1rem;
+    margin-top: 1rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+.bigBtn {
+    padding: 0 2rem;
+    margin: 1.7rem 0;
+}
+
+.bigBtn > button {
+    border: none;
+    font-family: inherit;
+}
+
+.linkBtn {
+    background-color: #06c003 !important;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+}
+
+.linkBtn.active {
+    background-color: #06cf03 !important;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+}
+
+.linkBtn2 {
+    background-color: #4A90E2 !important;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+}
+
+.linkBtn2.active {
+    background-color: #509ff7 !important;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+}
+
+.wxcreateForm .bigBtn button {
+    background-color: #BDBDBD;
+}
+
+.footerMsg {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #AAA;
+}
+
+.footerMsg a {
+    color: #4A90E2;
+    margin-left: 1.5rem;
+}
+
+.register-deal {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.register-deal h3 {
+    height: 4rem;
+    line-height: 4rem;
+    background-color: #107ED5;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.deal-content {
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.btn_disabled {
+    background-color: #62C16A !important;
+}
+
+.message-box {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 30%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.message, .helpMsg {
+    padding: 2px 10px;
+    line-height: 28px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.fail-reason {
+    word-wrap: break-word;
+    color: #CD001A !important;
+}
+
+.resetBtn {
+    background-color: #fff !important;
+    border-radius: 0;
+    color: #4A90E2 !important;
+    border: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+}
+
+.weui-picker-overlay, .weui-picker-container {
+    z-index: 15;
+}
+
+/*欢迎页*/
+.wxWelcome {
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.wxWelcome .hjw-desc {
+    margin-top: 10rem;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.wxWelcome .hjw-desc p {
+    margin-bottom: 4px;
+}
+
+.wxWelcome .wxWelocmeBtn {
+    margin-top: 6.5rem;
+    padding:  0 2rem;
+}
+
+.wxWelcome .btn-link {
+    display: block;
+    margin: 0 auto;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+    border-radius: .3rem;
+}
+
+.register-btn {
+    background-color: rgba(251, 201, 45, 0.85);
+    margin-bottom: 2rem !important;
+}
+
+.wxWelcome .login-btn {
+    background-color: rgba(140, 137, 255, 0.85);
+}
+
+/*个人中心*/
+.wxShow-header {
+    background-color: #F4F5F1;
+}
+
+.wxShow-header .nav {
+    color: #4A4A4A;
+    height: 2rem;
+    line-height: 2rem;
+    margin-bottom: .5rem;
+}
+
+.wxShow-header .user-info {
+    color: #9b9b9b;
+    font-size: 1.2rem;
+}
+
+.wxShow-header .person-edit img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.person-center .order-title {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0 1.2rem;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #ddd;
+    color: #4A4A4A;
+    background-color: #DEDEDE;
+}
+
+.person-center .order-item {
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+
+.person-center .order-item a {
+    color: #4A4A4A;
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.person-center .order-item a:after, .handleLink:after {
+    content: " ";
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    position: absolute;
+    top: 45%;
+    right: 2rem;
+    margin-left: .3em;
+}
+
+/*个人编辑页*/
+.wxEdit label {
+    width: 6rem;
+}
+
+.wxEdit-sepLine {
+    margin-bottom: 20px;
+}
+
+.red-placeholder::-webkit-input-placeholder {
+    color: #CD001A !important;
+}
+
+.red-placeholder::-moz-placeholder {
+    color: #CD001A !important;
+}
+
+.red-placeholder:-ms-input-placeholder {
+    color: #CD001A !important;
+}
+
+.red-placeholder:-moz-placeholder {
+    color: #CD001A !important;
+}
+
+/*自动评房页*/
+.flex-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.flex2 {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.flex3 {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+}
+
+.flex5 {
+    -webkit-box-flex: 5;
+    -webkit-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+}
+
+.create-header {
+    height: 5.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.create-header .creat-flowList li {
+    position: relative;
+    text-align: center;
+    color: #9B9B9B;
+}
+
+.create-header .creat-flowList li h3 {
+    font-size: 1.2rem;
+}
+
+.create-header li span {
+    display: inline-block;
+    border: 1px solid #939393;
+    background-color: #f4f4ef;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.create-header .creat-flowList li span:before {
+    content: '';
+    width: 0;
+    border-top: 1px solid #DCDCDC;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    margin-top: 5px;
+}
+
+.create-header .creat-flowList li.active {
+    color: #06c003;
+}
+
+.create-header li.active span:before {
+    border-top: 3px solid #06c003;
+    margin-top: 6px;
+}
+
+.create-header li.active span {
+    display: inline-block;
+    border: 1px solid #06c003;
+    background-color: #06c003;
+    width: 16px;
+    height: 16px;
+    margin-top: -3px;
+    margin-bottom: 3px;
+}
+
+/*自动评房step2*/
+.sepLine{
+    margin-top: 6px;
+}
+.pl-15 {
+    padding-left: 15px;
+}
+
+.createStep2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.createStep2 .weui_media_desc {
+    color: #F4722A !important;
+    padding-left: 20px;
+    -webkit-line-clamp:1;
+}
+.createStep2 .weui_panel_hd{
+    color: #333;
+}
+.createStep2 .weui_media_title {
+    font-size: 1.2rem !important;
+    font-weight: 600;
+}
+.createStep2 .weui_media_box{
+    padding: 5px 15px;
+}
+.createStep2 .weui_panel_hd {
+    font-size: 1.2rem;
+    padding: 4px 15px;
+}
+
+ form .title {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: #4A4A4A;
+    padding-left: 15px;
+}
+
+.createStep2 .deleteInfo {
+    text-align: center;
+    padding: 2px 0;
+}
+
+.colorRed {
+    color: #ff0a16;
+}
+
+.createStep2 .colorRed {
+    text-align: center;
+    color: #ff0a16;
+}
+
+.blue-link{
+    color: #4A90E2;
+}
+.createStep2 .deleteInfo .link {
+    color: #4A90E2;
+
+}
+
+/*.wxCreate2Form2 .form-adddress {
+    color: #4A4A4A;
+    font-size: 1.2rem;
+}
+
+.wxCreate2Form2 .form-adddress.active {
+    color: #F4722A;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.createStep2 .address-selected {
+    width: 1.3rem;
+}
+
+.createStep2 .address-selected {
+    -webkit-box-flex: 0.2;
+    -webkit-flex: 0.2;
+    -ms-flex: 0.2;
+    flex: 0.2;
+}*/
+
+/*自动评房step4*/
+.asset-valuation {
+    padding: 5rem 0 .5rem;
+    color: #4A4A4A;
+}
+
+.valuation-info {
+    margin-bottom: 2rem;
+}
+
+.asset-valuation .valuation-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    padding: 0 1rem 0 4rem;
+
+}
+
+.asset-valuation h4 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    text-align: center;
+
+}
+
+/*订单详情页wxIndex*/
+.wxIndex .orderHistory {
+    font-size: 1.2rem;
+    color: #4A4A4A;
+}
+
+.wxIndex .recordItem {
+    padding-bottom: 4px;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.wxIndex .orderTitle {
+    padding: 1rem 15px;
+    border-bottom: 1px solid #e0e3e8;
+    font-size: 1.2rem;
+}
+
+.wxIndex .orderTitle label {
+    margin-right: 1rem;
+}
+
+.wxIndex .orderDetail {
+    padding: 5px 15px;
+
+}
+
+.wxIndex .orderDetail p {
+    padding: .5rem 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+}
+
+.wxIndex .orderDetail p label {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.wxIndex .orderDetail p span {
+    font-size: 1.2rem;
+}
+
+.wxIndex .orderTitle span, p span {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.wxIndex .recordItem label {
+    color: #9B9B9B;
+    width: 4rem;
+}
+
+.wxIndex .orderTitle a {
+    position: relative;
+    padding: 0 1rem;
+    color: #06c003;
+    font-size: 1.25rem;
+    display: inline-block;
+    float: right;
+}
+
+.wxIndex .orderTitle a:after {
+    content: " ";
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    position: absolute;
+    top: 30%;
+    margin-left: 5px;
+}
+
+.wxIndex .icon-expression {
+    width: 6rem;
+    height: 6rem;
+}
+
+.wxIndex .empty-info {
+    margin: 8rem auto 2rem;
+    text-align: center;
+}
+
+.wxIndex .warm-tip {
+    margin-top: 2.5rem;
+    color: #9B9B9B;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.wxIndex .bring-data {
+    width: 100%;
+    /*padding-bottom: 10px;*/
+    text-align: left;
+    font-size: 1rem;
+    left: 0;
+}
+
+.wxIndex .reportBill-benefit {
+    padding: 0 15px 6px;
+}
+
+.wxIndex .reportBill-benefit .flex-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    font-size: 1rem;
+}
+
+.wxIndex .benefit-btn {
+    color: #00a2d4;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 6px;
+}
+
+/*携带资料*/
+.bring-data .flex-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+}
+
+.bring-data h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.bring-data p {
+    margin-bottom: .5rem;
+    font-size: 1rem !important;
+}
+
+.bring-data p span {
+    font-size: 1rem !important;
+}
+
+.bring-data p label {
+    margin-right: -5px;
+}
+
+.bring-data .required-dataList {
+    border-top: 1px solid #e0e3e8;
+    border-bottom: 1px solid #e0e3e8
+}
+
+.bring-data .addition-dataList {
+    border-bottom: 1px solid #e0e3e8
+}
+
+.bring-data .required-dataList, .bring-data .addition-dataList {
+    line-height: 22px;
+    padding: 1rem 0;
+}
+
+.required-data, .addition-data {
+    color: #00a2d4 !important;
+}
+
+/*预约界面*/
+.wxOrder .recordItem {
+    padding-bottom: 0;
+}
+
+.wxOrder .orderTitle {
+    background-color: #ddd;
+    color: #000;
+    border-bottom: none;
+}
+
+.wxOrder .orderTitle label {
+    color: #000;
+}
+
+.wxOrder .orderTitle a {
+    background-color: #20c8d3;
+    border-radius: 0.9rem;
+    color: #fff;
+}
+
+.wxOrder .orderTitle a:after {
+    display: none;
+}
+
+.wxOrder .orderDetail p {
+    border-bottom: 1px solid #e7eaef;
+}
+
+.wxOrder .btnList {
+    text-align: right;
+}
+
+.wxOrder .btnList .weui_btn {
+    display: inline-block;
+    margin-left: 10px;
+    line-height: 2;
+}
+
+.wxOrder .weui_btn + .weui_btn {
+    margin-top: 10px;
+}
+
+.appointment .step-title {
+    background-color: #ddd;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .5rem 0;
+}
+
+.appointment .handleLink {
+    display: block;
+    background-color: #fff;
+    padding: 1.2rem 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    position: relative;
+    color: #4A4A4A;
+}
+
+.appointment .bigBtn {
+    margin-top: 6rem;
+}
+
+.appointment .handleLink:after {
+    top: 40%;
+}
+
+.time-flowList {
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.time-flowList li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+    color: #4A4A4A;
+}
+
+.time-flowList li.active {
+    border-color: #06c003;
+    border-width: 3px;
+    margin-top: 1px;
+}
+
+.appointment-title {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    background-color: #F4F5F1;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.appointmentTime {
+    padding: .5rem 15px;
+}
+
+.appointmentTime h3 {
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+.time-period {
+    position: relative;
+}
+
+.time-period .time-item:first-child {
+}
+
+.time-item {
+    float: left;
+    font-size: 1.2rem;
+    width: 50%;
+    text-align: center;
+    padding: .5rem .8rem;
+}
+
+.time-item span {
+    border: 1px solid #ccc;
+    display: block;
+    padding: .5rem 0;
+
+}
+
+.time-item.active span {
+    border: 1px solid #fc7404;
+}
+
+.info-msg {
+    margin: 5rem 0 2rem;
+    text-align: center;
+}
+
+.info-msg .weui_icon_msg{
+    margin-bottom: 2rem;
+    display: block;
+}
+.info-msg h3{
+    font-size: 1.2rem;
+}
+.info-msg h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/*图片上传*/
+.fileUpload .file-title {
+    font-size: 1.2rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    background-color: #e1e1e1;
+}
+
+.fileUpload .file-title .status {
+    color: #CD001A;
+}
+
+.fileUpload .title-desc {
+    padding: 0 15px;
+}
+
+.fileUpload .preview {
+    height: 77px;
+    width: 77px;
+}
+
+.fileUpload .weui_uploader_input_wrp {
+    margin-bottom: 0;
+}
+
+.weui_uploader_input_wrp:after, .weui_uploader_input_wrp:before {
+    z-index: -1;
+}
+
